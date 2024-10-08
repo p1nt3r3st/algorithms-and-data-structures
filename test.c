@@ -109,6 +109,9 @@ int main(){
 	head = (Node*)malloc(sizeof(Node));
 	head -> value = 1;
 	head -> next = NULL;
+
+	char myString[40];
+	
 	printf("%d", head -> value);
 	append(head, 2);
 	append(head, 3);
@@ -119,6 +122,10 @@ int main(){
 	printList(head);
 	printf("%d\n", indexList(head, 1));
 	printf("size=%d\n", length(head));
+	printf("Введите текст:\n");
+	fgets(myString, 40, stdin);
+	puts(myString);
+	
 printf("Hello!\n");
 return 0;
 }
